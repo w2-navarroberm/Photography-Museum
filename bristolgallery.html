@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1,
+shrink-to-fit=no">
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/stylemember.css">
+ <link rel="stylesheet" href="css/modal.css">
+ <title>The Analogue Museum</title>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+
+ </head>
+ <body class="bg-dark">
+
+  <div class="container text-center">
+    <header>
+    <img class="img-fluid" src="images/logo.png" width="500" height="150">
+  </header>
+</div>
+
+<div class="container">
+ 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ 		<button class="navbar-toggler" type="button"
+ 			data-toggle="collapse" data-target="#navbarNav"
+ 			aria-controls="navbarNav" aria-expanded="false"
+ 			aria-label="Toggle navigation">
+ 			<span class="navbar-toggler-icon small"></span>
+ 		</button>
+ 			<div class="collapse navbar-collapse" id="navbarNav">
+ 				
+ 				<ul class="navbar-nav navbar-left">
+ 					<li class="nav-item active">
+ 						<a class="nav-link text-white" href="#">What's on</a>
+ 					</li>
+					<li class="nav-item">
+         	    	   	<a class="nav-link text-white" href="#">Tours</a>
+ 					</li>
+					<li class="nav-item">
+ 						<a class="nav-link text-white" href="#">Talks</a>
+					</li>
+					<li class="nav-item">
+ 						<a class="nav-link text-white" href="#">Events</a>
+					</li>
+ 				</ul>
+ 			</div>
+	</nav>
+</div>
+
+<div class="container">
+
+  <h1 class="text-center font-weight-light mb-0 text-white">BRISTOL IN ANALOGUE</h1>
+  
+  <h4 class="text-white text-center pt-3"> Bristol in analogue is a series of images created by diversed local photographers. This is gallery is about bristol citizens lifestyle and its surroundings.</h4>
+
+  <p class="text-white text-center pt-3">*You can find all the images at our museum*</p>
+
+  <div class="row text-center text-lg-left pt-5">
+
+    <div class="col-lg-3 col-md-4 col-6 pb-3">
+  
+    <img id="myImg1" src="images/Bristol (1).jpg" alt="" style="width:100%;max-width:300px">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+    </div>
+
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6 pb-3">
+  
+    <img id="myImg2" src="images/Bristol (2).jpg" alt="" style="width:100%;max-width:300px">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+    </div>
+
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6 pb-3">
+  
+    <img id="myImg3" src="images/Bristol (3).jpg" alt="" style="width:100%;max-width:300px">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+    </div>
+
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6 pb-3">
+  
+    <img id="myImg4" src="images/Bristol (4).jpg" alt="" style="width:100%;max-width:300px">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+    </div>
+
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6 pb-3">
+
+    <img id="myImg5" src="images/Bristol (5).jpg" alt="" style="width:100%;max-width:300px">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+    </div>
+
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6 pb-3">
+  
+    <img id="myImg6" src="images/Bristol (6).jpg" alt="" style="width:100%;max-width:300px">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+    </div>
+
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6 pb-3">
+  
+    <img id="myImg7" src="images/Bristol (7).jpg" alt="" style="width:100%;max-width:300px">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+    </div>
+
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6 pb-3">
+  
+    <img id="myImg8" src="images/Bristol (8).jpg" alt="" style="width:100%;max-width:300px">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+    </div>
+
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6 pb-3">
+  
+    <img id="myImg9" src="images/Bristol (9).jpg" alt="" style="width:100%;max-width:300px">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+    </div>
+
+    </div>
+    
+
+  </div>
+
+</div>
+<!-- /.container -->
+
+<div class="container">
+	<div class="space pt-3">
+		
+	</div>
+</div>
+
+
+<footer class="information py-3 mt-auto text-center">
+  <div class="container">
+  <div class="row">
+   
+    <div class="col-6 col-md text-white">
+      <ul class="list-unstyled text-small">
+        <li><a class="text-white" href="#"><strong>Mon - Sat</strong></a></li>
+        <li><a class="text-white" href="#">10am - 6pm</a></li>
+        <li><a class="text-white" href="#"><strong>Sun</strong> 11am - 6pm</a></li>
+        <li><a class="text-white" href="#">Free after 5pm</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md text-white">
+      <h5>Information</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">About us</a></li>
+        <li><a class="text-muted" href="#">Press</a></li>
+        <li><a class="text-muted" href="#">Terms & Conditions</a></li>
+        <li><a class="text-muted" href="#">Privacy & Cookies Policy</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md text-white">
+    	<h5>Contact Us</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">info@theanaloguemuseum.com</a></li>
+        <li><a class="text-muted" href="#">+44 (0) 20 7087 9300</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md text-white">
+      <h5>Find us</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" >16 Narrow Quay</a></li>
+        <li><a class="text-muted" >Bristol</a></li>
+        <li><a class="text-muted" >BS1 41A</a></li>
+        <li><a class="text-muted" >United Kingdom</a></li>
+      </ul>
+    </div>
+  </div>
+
+  </div>
+</footer>
+
+<div class="designer text-center bg-light">
+      <medium class="d-block pb-3 text-body align-middle">Copyright © 2020 | Designed by Willian Navarro</medium>
+    </div>
+
+ 
+
+
+
+ <!-- ADD YOUR WEBSITE CODE HERE -->
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="js/jquery-3.4.1.min.js"></script>
+ <script src="js/popper.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script>
+   // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg1");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+ </script>
+  <script>
+   // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg2");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+ </script>
+  <script>
+   // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg3");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+ </script>
+  <script>
+   // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg4");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+ </script>
+  <script>
+   // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg5");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+ </script>
+  <script>
+   // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg6");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+ </script>
+  <script>
+   // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg7");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+ </script>
+  <script>
+   // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg8");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+ </script>
+  <script>
+   // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg9");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+ </script>
+ </body>
+</html> 
